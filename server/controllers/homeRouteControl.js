@@ -1,20 +1,15 @@
 
 exports.getHomeRoute = async ( req,res ) => {
 
-    if( req.session.role == 'user')
-    {
-        res.redirect('dash')
-    }
-    else if ( req.session.role == 'admin')
-    {
+    let role = req.session.role
+    let email = req.session.email
+    let username = req.session.username
 
-        res.redirect('admin')
-    }
-    else
-    {
         res.render('index',{
-            PageTitle : "Home Page" 
+            PageTitle : "Home Page" ,
+            role:role,
+            email:email,
+            username:username
         })
-    }
-    
+
 }
