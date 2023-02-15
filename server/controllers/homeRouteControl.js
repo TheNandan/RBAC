@@ -6,7 +6,7 @@ exports.getHomeRoute = async ( req,res ) => {
     let username = req.session.username
 
         res.render('index',{
-            PageTitle : "Home Page" ,
+            PageTitle : "Home" ,
             role:role,
             email:email,
             username:username

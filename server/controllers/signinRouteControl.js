@@ -12,7 +12,7 @@ exports.getSigninRoute = async( req,res ) => {
         
     } else{
         res.render('signin',{
-            PageTitle : 'Sign In page'
+            PageTitle : 'Sign In'
         })
     }   
 }
@@ -61,7 +61,7 @@ exports.postSigninRoute = async( req,res ) => {
                     {
                         const allUser = await user.find({role:'user'})
                         res.render('admin',{
-                            PageTitle:'Admin Page',
+                            PageTitle:'Admin',
                             allusers:allUser
                         })
                     }

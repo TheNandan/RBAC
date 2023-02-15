@@ -5,7 +5,7 @@ exports.getadminRoute = async( req,res ) => {
     {
         const allUser = await user.find({role:'user'})
         res.render('admin',{
-            PageTitle:'Admin Page',
+            PageTitle:'Admin',
             allusers:allUser
         })
     }

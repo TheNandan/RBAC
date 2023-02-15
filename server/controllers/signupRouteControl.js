@@ -14,7 +14,7 @@ exports.getSignupRoute = async( req,res ) => {
     else
     {
         res.render('signup',{
-            PageTitle:"Sign Up Page"
+            PageTitle:"Sign Up"
         })
     }
 }
