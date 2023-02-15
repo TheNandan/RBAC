@@ -1,0 +1,37 @@
+<%- include('partials/_header') %>
+
+<div class="text-center mt-5">
+    <h1><span style="color: #4285F4;">Si</span><span style="color: #DB4437;">gn</span> <span style="color: #F4B400;">In</span> <span style="color: #0F9D58;">!</span></h1>
+</div>
+
+<div>
+    <div class="container-sm mx-auto mt-5" style="width: 25em;">
+        <div class="card">
+
+            <div class="card-body mt-2">
+                <form action="/signin" method="post">
+
+                    <div class="form-group mt-1">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" name="email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+        
+                      <div class="form-group mt-2">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                      </div>
+        
+        
+                      <div class="text-center mt-5">
+                        <button type="submit" class="btn btn-primary"> Sign In </button>
+                      </div>
+                      
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<%- include('partials/_footer') %>
