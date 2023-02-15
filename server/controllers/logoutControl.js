@@ -1,5 +1,5 @@
 exports.logoutControl = async( req,res) => {
-    await req.session.destroy( (err) => {
+    req.session.destroy( (err) => {
         if(err)
         {
             console.log(err)
