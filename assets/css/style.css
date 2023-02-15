@@ -1,0 +1,11 @@
+@media only screen and (max-width: 600px)
+{
+    .x404 h1 span{
+        font-size: 30px;
+        
+    }
+
+    .x404 h1 span svg{
+        width: 30px;
+    }
+}
